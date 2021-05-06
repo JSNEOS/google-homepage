@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-areas:
+         'header '
+         'main'
+         'footer';	
+	}
+    header {
+        grid-area: header;
+    }
+    header a {
+        text-decoration: none;
+		color: black;
+        padding: 6px;
+    }
+    header a:hover {
+        text-decoration: underline;
+    }
+    .gmail-images-sign button {
+		color: white;
+		background-color: #1a73e8;
+		border-radius: 5px;
+		border: 0;
+		box-shadow: 0;
+		width: 75px;
+		height: 35px;
+		font-size: 15px;
+
+	}
+	.gmail-images-sign button:hover {
+		cursor: pointer;
+		background-color: #448dec ;
+	}
+    
+    header .about-store {
+        float:left;
+        padding: 13px;
+        font-size: 14px;
+        
+    }
+    header .gmail-images-sign {
+        float: right;
+        padding: 10px;    
+    }
+    .main-search {
+        grid-area: main;
+        text-align: center;
+        padding-top: 180px;
+    }
+    #search-box {
+		border-radius: 25px;
+        border: 1px solid rgb(218, 218, 218); 
+        width: 85vw;
+		max-width: 570px;
+		height: 40px;
+        margin: 20px;				
+	}
+    #search-box:hover {
+		box-shadow: 1px 1px 1px 1px rgb(224, 222, 222);				
+	}
+    .main-search button {
+		width: 140px;
+		height: 35px;
+		border: 0;
+		border-radius: 5px;
+		background-color: #f8f9fa;
+		font-weight: 500;
+        margin: 5px
+	}
+    .main-search button:hover {
+        cursor: pointer;
+        border: 1px solid rgb(185, 185, 185);
+    }
+    .main-search p {
+		font-size: 13px;
+		text-align: center;
+	}
+    footer {
+        grid-area: footer;
+        background-color: #f2f2f2;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 20px;
+    }
+    footer a, p {
+        text-decoration: none;
+		color: #82868b;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    footer .advert {
+        display: inline-block;
+        width: 33%;
+    }
+    footer .privacy {
+        display: inline-block;
+        width: 33%;
+        text-align: right;
+    }
+    footer .carbon {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <header>
+	    <nav>
+            <div class="about-store">
+		        <a href="#about">About</a>
+		        <a href="#store">Store</a>
+            </div>
+            <div class="gmail-images-sign">  
+                <a href="#gmail">Gmail</a>
+		        <a href="#images">Images</a>
+		        <button id="sign-in">Sign in</button>
+            </div>
+	    </nav>
+    </header>
+	<div class="main-search">
+        <div>
+		    <img src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png>
+        </div>
+        <div>
+		<input id="search-box" type="text">
+        </div>
+        <div>
+		<button>Google Search</button>
+		<button>I'm Feeling Lucky</button>
+        </div>
+		<p>It's World Password Day. <a href="#">Take a Security Checkup</a> to strengthen your account</p>
+	</div>
+	<div>
+		<footer>
+            <div>
+                <p>United Kingdom</p>
+            </div>
+            <div class="advert">
+                <a href="#advertising">Advertising</a>
+			    <a href="#business">Business</a>
+			    <a href="#how-search">How Search works</a>
+            </div>
+			<div class="carbon">
+                <a href="#carbon">Carbon neutral since 2007</a>
+            </div>
+            <div class="privacy">
+                <a href="#privacy">Privacy</a>
+			    <a href="#terms">Terms</a>
+			    <a href="#settings">Settings</a>
+            </div>
+		</footer>
+	</div>
+	
+</body>
+</html>
